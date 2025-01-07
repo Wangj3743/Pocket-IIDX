@@ -1,7 +1,7 @@
 # Pocket-IIDX
 a DIY mini rhythm game controller compatible with games such as LR2, Beatoraja, Infinitas, osu!, etc.
 
-inspired by speedpotato's [Pocket-SDVX](https://github.com/speedypotato/Pocket-SDVX)
+Inspired by speedpotato's [Pocket-SDVX](https://github.com/speedypotato/Pocket-SDVX)
 
 
 ## Features
@@ -48,6 +48,7 @@ inspired by speedpotato's [Pocket-SDVX](https://github.com/speedypotato/Pocket-S
 1. 3D print the cover ([left]() or [right]()), [case](), and [turntable]()		<!-- include links -->
 > [!TIP]
 > Skip to the steps 2-6 to save time while waiting for the 3D prints to finish 
+
 > Print the parts in the order above
 2. Attach LEDs into the switches. Make sure the LED pins are in this position: ![]()		<!-- img -->
 > [!TIP]
@@ -57,16 +58,20 @@ inspired by speedpotato's [Pocket-SDVX](https://github.com/speedypotato/Pocket-S
 5. Connect and solder wire (~10cm long) to the pins of each switch, as well as the positive LED leg: ![]()		<!-- img & check wire length -->
 > [!TIP]
 > Color code or label wires for organization and convenience
+
 > ![]()		<!-- example -->
 6. Connect and solder wire (~10cm long) to the pins of the encoder		<!-- check wire length -->
-> [!NOTE]   <!-- is this even needed tbh -->
+> [!NOTE]
+<!-- is this even needed tbh -->
 > If you are using different encoders from the ones listed in the [Assembly List](), note that the Bourn pin names are different to most.
 > For reference the Bourne pins are equal to most other encoders in this way: A = clock, B = data, C = ground 
 7. Slot the Gateron switches into the cover. Make sure the wires go through the cover
 8. Glue Gateron switches into the cover. 
 > [!NOTE]
 > Make sure all of the switches are aligned correctly in terms of the direction the LED is facing
+
 > Most people choose north facing (LEDs face toward you) or south facing (LEDS face away from you)
+
 > Do some research and choose what you prefer
 9. Secure the encoder to the cover with a hex nut (it should be included with the encoder)
 10. Plug the Pro Micro into your computer and upload [PocketIIDX.ino]() into the Pro Micro through the [Arduino IDE](https://www.arduino.cc/en/software)		<!-- link -->
