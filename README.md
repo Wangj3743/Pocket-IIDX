@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is UNDER CONSTRUCTION. Many aspects of the project are missing and unfinished. Thank you for your understanding 
+
 # Pocket-IIDX
 a DIY mini rhythm game controller compatible with games such as LR2, Beatoraja, Infinitas, osu!, etc.
 
