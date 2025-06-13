@@ -3,8 +3,8 @@
   Bourns B -| TX0     GND |- -------- ⏚
   Bourns C -| GND     RST |-
 ⏚ -------- -| GND     VCC |-
-⏚ --- MSW1 -| 2    A3(21) |- LEDR --- ⏚
-⏚ --- MSW2 -| 3    A2(20) |- LEDF --- ⏚
+⏚ --- MSW1 -| 2    A3(21) |- BTSL --- ⏚
+⏚ --- MSW2 -| 3    A2(20) |- BTST --- ⏚
 ⏚ --- MSW3 -| 4    A1(19) |- LED7 --- ⏚
 ⏚ --- MSW4 -| 5    A0(18) |- LED6 --- ⏚
 ⏚ --- MSW5 -| 6        15 |- LED5 --- ⏚
