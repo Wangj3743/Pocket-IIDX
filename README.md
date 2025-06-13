@@ -18,43 +18,44 @@ Inspired by speedpotato's [Pocket-SDVX](https://github.com/speedypotato/Pocket-S
 
 ## Assembly List
 ### Structural Parts
-- 1x 3D-printed cover ([left]() or [right]())		<!-- include links -->
+- 1x [3D-printed keyplate]()	<!-- include links -->
 - 1x [3D-printed case]()		<!-- include links -->
 - 1x [3D-printed turntable]()		<!-- include links -->
-- 4x 1x1 keycap
-- 7x 1x1.25 keycap
+- 7x 1x1.25 keycaps (4 white, 3 black)     <!-- include links -->
 - 6x Rubber feet
 
 ### Electronic Parts
 - 1x Pro Micro Arduino
-- 1x Bourns PEC16-2015F-N0024 Encoders
-- 11x Gateron Yellow Switches (or any other MX-style switch)
+- 1x Bourns PEC16-2015F-N0024 encoders
+- 7x Gateron Yellow switches (or any other MX-style switch)
+- 7x 3mm LEDs (4 white, 3 black)		<!-- check size -->
+- 2x push buttons <!-- these have an actual name but i forgot what they are -->
 - 1x Micro USB Male to USB A Male
-- 11x 3mm LEDS		<!-- check size -->
 
 ### Other Parts
 - Solder
 - Wire
 - Glue
 
-### Recommended Tools
+### Tools
 - Soldering iron
 - 3D printer
 - Wire stripper
 - Wire cutter
+- Heat shrink (optional but recommended for safety)
 - Soldering fume fan (optional)
 - Solder sucker (optional)
 
 
 
 ## Build
-1. 3D print the cover ([left]() or [right]()), [case](), and [turntable]()		<!-- include links -->
+1. 3D print the [keyplate](), [case](), and [turntable]()		<!-- include links -->
 > [!TIP]
-> Skip to the steps 2-6 to save time while waiting for the 3D prints to finish.
-> Print the parts in the order above
+> Jump to the steps 2-6 while you wait for the 3D prints to finish
+> Print everything in the order above as this is the chronological order that parts will be used
 2. Attach LEDs into the switches. Make sure the LED pins are in this position: ![]()		<!-- img -->
 > [!TIP]
-> ![]() The negative pin is the shorter leg or the side with the larger metal inside the transparent plastic		<!-- img --> 
+> ![]() The negative pin is the shorter leg and/or the side with the larger metal inside the transparent plastic		<!-- img --> 
 3. Connect and solder the negative pin of the LED to the lower switch pin with a wire: ![]()		<!-- img -->
 4. Cut the legs of each LED to 1cm		<!-- check size -->
 5. Connect and solder wire (~10cm long) to the pins of each switch, as well as the positive LED leg: ![]()		<!-- img & check wire length -->
@@ -63,21 +64,20 @@ Inspired by speedpotato's [Pocket-SDVX](https://github.com/speedypotato/Pocket-S
 > ![]()		<!-- example -->
 6. Connect and solder wire (~10cm long) to the pins of the encoder		<!-- check wire length -->
 > [!NOTE]
-> If you are using different encoders from the ones listed in the [Assembly List](), note that the Bourn pin names are different to most other encoders.
-> For reference the Bourne pins are equal to most other encoders in this way: A = clock, B = data, C = ground 
-7. Slot the Gateron switches into the cover. Make sure the wires go through the cover
-8. Glue Gateron switches into the cover. 
+> If you are using different encoders from the ones listed in the [Assembly List](), note that pin orders and names may be different
+> For reference, the Bourns pins are A = clock, B = data, C = common ground 
+7. Slot the Gateron switches into the keyplate. Make sure the wires go through the keyplate
+8. Glue Gateron switches into the keyplate
 > [!NOTE]
-> Make sure all of the switches are aligned correctly in terms of the direction the LED is facing.
-> Most people choose north facing (LEDs face toward you) or south facing (LEDS face away from you).
-> Do some research and choose what you prefer
-9. Secure the encoder to the cover with a hex nut (it should be included with the encoder)
-10. Plug the Pro Micro into your computer and upload [PocketIIDX.ino]() into the Pro Micro through the [Arduino IDE](https://www.arduino.cc/en/software)		<!-- link -->
-11. Unplug the Pro Micro
+> Make sure all of the switches are aligned correctly based on LED position (I recommend having the LEDs face towards you so that you see the light)
+> ![]()   <!-- img -->
+9. Secure the encoder to the keyplate with a hex nut (it should be included with the encoder)
 ![]()		<!-- wiring diagram -->
-12. Refer to the wiring diagram above and connect the wires on the switches and LEDs to the Pro Micro
-13. Secure the Pro Micro to the case
-14. Secure the cover to the case
-15. Put the keycaps on the switches and attach the turntable to the encoder: ![]()		<!-- img -->
-16. Plug the Pro Micro back into your computer and test the keys and turntable. Check if the keys output properly: ![]()		<!-- img -->
-17. Done!
+10. Refer to the wiring diagram above and connect the wires on the switches and LEDs to the Pro Micro
+11. Install the [Arduino IDE](https://www.arduino.cc/en/software)
+12. Plug the Pro Micro into your computer, choose the right port and model (Arduino Leonardo) and upload [PocketIIDX.ino](). When its finished uploading unplug the Pro Micro from your computer		<!-- link -->
+14. Secure the Pro Micro to the case
+15. Secure the keyplate to the case
+16. Put the keycaps on the switches and attach the turntable to the encoder: ![]()		<!-- img -->
+17. Plug the Pro Micro back into your computer and test the keys and turntable. Check if the keys output properly: ![]()		<!-- img -->
+18. Done!
